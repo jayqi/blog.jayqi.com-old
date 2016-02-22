@@ -1,74 +1,53 @@
 /*
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Error: File to import not found or unreadable: vars.
+        on line 1 of ./ie/v8.scss
+
+1: @import 'vars';
+2: @import 'mixins';
+3: 
+4: /*
+5: 	Strata by HTML5 UP
+6: 	html5up.net | @n33co
+
+Backtrace:
+./ie/v8.scss:1
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:414:in `run'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Jay/.rvm/gems/ruby-2.2.4/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
+/Users/Jay/.rvm/gems/ruby-2.2.4/bin/sass:23:in `load'
+/Users/Jay/.rvm/gems/ruby-2.2.4/bin/sass:23:in `<main>'
+/Users/Jay/.rvm/gems/ruby-2.2.4/bin/ruby_executable_hooks:15:in `eval'
+/Users/Jay/.rvm/gems/ruby-2.2.4/bin/ruby_executable_hooks:15:in `<main>'
 */
-
-/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
-	}
-
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
-		height: 2.75em;
-		line-height: 2.75em;
-	}
-
-	input[type="checkbox"] + label:before,
-	input[type="radio"] + label:before {
-		display: none;
-	}
-
-/* Image */
-
-	.image {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
-	}
-
-		.image:before, .image:after {
-			display: none !important;
-		}
-
-		.image img {
-			position: relative;
-			-ms-behavior: url("css/ie/PIE.htc");
-		}
-
-/* Header */
-
-	#header {
-		background-image: url("../../images/bg.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		-ms-behavior: url("css/ie/backgroundsize.min.htc");
-	}
-
-		#header h1 {
-			color: #ffffff;
-		}
-
-/* Footer */
-
-	#footer .icons a {
-		color: #ffffff;
-	}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: vars.\A         on line 1 of ./ie/v8.scss\A \A 1: @import 'vars';\A 2: @import 'mixins';\A 3: \A 4: /*\A 5: 	Strata by HTML5 UP\A 6: 	html5up.net | @n33co"; }
