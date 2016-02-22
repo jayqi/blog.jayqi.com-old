@@ -27,4 +27,4 @@ I've customized the template a bit to suit myself---for example, I reduced the s
 
 ## How to do it yourself
 
-In the interest of not making a massive wall of text, I will detail how I set up the blog in a [separate post]({{ site.baseurl }}/2016/02/20/How-to-set-up-Jekyll-on-GitHub-Pages.html). 
+In the interest of not making a massive wall of text, I will detail how I set up the blog in a [separate post]({{ site.baseurl }}/2016/02/21/How-to-set-up-Jekyll-on-GitHub-Pages.html). 
