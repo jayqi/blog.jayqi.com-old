@@ -5,8 +5,8 @@
 */
 /* Header */
 #header {
-  padding: 6em 3em 3em 3em;
-  width: 30%; }
+  padding: 2em 2em 2em 2em;
+  width: 320px; }
   #header h1 {
     font-size: 1.25em; }
     #header h1 br {
@@ -14,20 +14,19 @@
 
 /* Footer */
 #footer {
-  padding: 0 3em 5em 3em;
-  width: 30%; }
+  padding: 0 2em 4em 2em;
+  width: 320px; }
   #footer .copyright li {
     border-left-width: 0;
     display: block;
-    line-height: 2.25em;
     margin-left: 0;
     padding-left: 0; }
 
 /* Main */
 #main {
-  margin-left: 30%;
+  margin-left: 320px;
   max-width: none;
-  padding: 6em 3em 3em 3em;
-  width: calc(100% - 30%); }
+  padding: 2em 2em 2em 2em;
+  width: calc(100% - 320px); }
 
 /*# sourceMappingURL=style-large.css.map */

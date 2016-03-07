@@ -17,7 +17,7 @@ ul.icons li .icon {
   background-position: top left,	center center;
   background-size: auto,		cover;
   left: auto;
-  padding: 6em 4em;
+  padding: 2em 2em;
   position: relative;
   text-align: center;
   top: auto;
@@ -26,6 +26,14 @@ ul.icons li .icon {
     font-size: 1.75em; }
     #header h1 br {
       display: inline; }
+  #header ul {
+    margin: 0;
+    padding-left: 0; }
+  #header li {
+    display: inline-block;
+    line-height: 1em;
+    padding-left: 1em;
+    padding-right: 1em; }
 
 /* Footer */
 #footer {
@@ -37,7 +45,7 @@ ul.icons li .icon {
   background-size: auto,							cover;
   bottom: auto;
   left: auto;
-  padding: 4em 4em 6em 4em;
+  padding: 2em 2em 2em 2em;
   position: relative;
   text-align: center;
   width: 100%; }
@@ -55,7 +63,7 @@ ul.icons li .icon {
 /* Main */
 #main {
   margin: 0;
-  padding: 6em 4em;
+  padding: 2em 2em;
   width: 100%; }
 
 /*# sourceMappingURL=style-medium.css.map */

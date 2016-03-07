@@ -1,111 +1,122 @@
 <!DOCTYPE html>
 <html>
 
-  	<head>
-  		<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  		<meta name="description" content="" />
-  		<meta name="keywords" content="" />
-  		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-  		<script src="/js/jquery.min.js"></script>
-  		<script src="/js/jquery.poptrox.min.js"></script>
-  		<script src="/js/skel.min.js"></script>
-  		<script src="/js/init.js"></script>
-  		<noscript>
-  			<link rel="stylesheet" href="/css/skel.css" />
-  			<link rel="stylesheet" href="/css/style.css" />
-  			<link rel="stylesheet" href="/css/style-xlarge.css" />
-  		</noscript>
-  		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-  	</head>
+<head>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.poptrox.min.js"></script>
+  <script src="/js/skel.min.js"></script>
+  <script src="/js/init.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/skel.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-xlarge.css" />
+  </noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
 
-	<body id="top">
+  <!-- Show/hide design info-->
+  <script type="text/javascript">
+  <!--
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+    e.style.display = 'none';
+    else
+    e.style.display = 'block';
+  }
+  //-->
 
-      <header id="header">
-          <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt="" /></a>
-          <h1><a href="/">{{ site.title }}</a></h1>
-          <br />
-          <h2>{{ site.tagline }}</h2>
+  </script>
+</head>
 
-          <br /><br />
-          <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/archive/">Archive</a></li>
-          </ul>
-      </header>
+<body id="top">
+
+  <header id="header">
+    <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt="" /></a>
+    <h1><a href="/">{{ site.title }}</a></h1>
+    <br />
+    <h2>{{ site.tagline }}</h2>
+    <br /><br />
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/archive/">Archive</a></li>
+    </ul>
+  </header>
 
 
-        {{ content }}
+  {{ content }}
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
+  <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
 
-              {% if site.github_username %}
-              <li>
-                <a href="https://github.com/{{ site.github_username }}" class="icon fa-github" title="Github">
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-              {% endif %}
+      {% if site.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" class="icon fa-github" title="Github">
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+      {% endif %}
 
-              {% if site.twitter_username %}
-              <li>
-                <a href="https://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter" title="Twitter">
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-              {% endif %}
+      {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter" title="Twitter">
+          <span class="label">Twitter</span>
+        </a>
+      </li>
+      {% endif %}
 
-              {% if site.linkedin_username %}
-              <li>
-                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="icon fa-linkedin" title="LinkedIn">
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-              {% endif %}
+      {% if site.linkedin_username %}
+      <li>
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="icon fa-linkedin" title="LinkedIn">
+          <span class="label">LinkedIn</span>
+        </a>
+      </li>
+      {% endif %}
 
-              {% if site.google_plus_username %}
-              <li>
-                <a href="https://plus.google.com/{{ site.google_plus_username }}" class="icon fa-google-plus" title="Google Plus">
-                  <span class="label">Google+</span>
-                </a>
-              </li>
-              {% endif %}
+      {% if site.google_plus_username %}
+      <li>
+        <a href="https://plus.google.com/{{ site.google_plus_username }}" class="icon fa-google-plus" title="Google Plus">
+          <span class="label">Google+</span>
+        </a>
+      </li>
+      {% endif %}
 
-              {% if site.facebook_username %}
-              <li>
-                <a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon fa-facebook" title="Facebook">
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-              {% endif %}
+      {% if site.facebook_username %}
+      <li>
+        <a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon fa-facebook" title="Facebook">
+          <span class="label">Facebook</span>
+        </a>
+      </li>
+      {% endif %}
 
-              {% if site.dribbble_username %}
-              <li>
-                <a href="https://dribbble.com/{{ site.dribbble_username}}" class="icon fa-dribbble" title="Dribbble">
-                  <span class="label">Dribbble</span>
-                </a>
-              </li>
-              {% endif %}
+      {% if site.dribbble_username %}
+      <li>
+        <a href="https://dribbble.com/{{ site.dribbble_username}}" class="icon fa-dribbble" title="Dribbble">
+          <span class="label">Dribbble</span>
+        </a>
+      </li>
+      {% endif %}
 
-              {% if site.email %}
-              <li>
-                <a href="mailto:{{ site.email }}" class="icon fa-envelope-o" title="Email">
-                  <span class="label">Email</span>
-                </a>
-              </li>
-              {% endif %}
-            </ul>
-            <ul class="copyright">
-                <li>&copy; {{ site.copyright }}</li>
-                <li>&nbsp;</li>
-                <li><a href="https://github.com/jayqi/Strata-Alt-Jekyll-Theme">Design</a> modified from</li>
-                <li><a href="https://github.com/CloudCannon/Strata-Jekyll-Theme">Cloud Cannon</a> based on <a href="http://html5up.net/strata">HTML5 UP</a></li>
-                <li>&nbsp;</li>
-                <li>Powered by <a href="https://jekyllrb.com/">Jekyll</a> on <a href="https://pages.github.com/">GitHub Pages</a>
-            </ul>
-        </footer>
+      {% if site.email %}
+      <li>
+        <a href="mailto:{{ site.email }}" class="icon fa-envelope-o" title="Email">
+          <span class="label">Email</span>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+    <ul class="copyright">
+      <li>&copy; {{ site.copyright }}</li>
+      <li><a href="#design" onclick="toggle_visibility('design');">Design</a></li>
+      <div id="design" class="design" name="design"><li><a href="https://github.com/jayqi/Strata-Alt-Jekyll-Theme">Strata Alt Jekyll Theme</a>, derived from <a href="https://github.com/CloudCannon/Strata-Jekyll-Theme">CloudCannon</a> and <a href="http://html5up.net/strata">HTML5 Up</a></li></div>
+      <li>Powered by <a href="https://jekyllrb.com/">Jekyll</a> on <a href="https://pages.github.com/">GitHub Pages</a></li>
+    </ul>
+  </footer>
 
-	</body>
+</body>
 </html>

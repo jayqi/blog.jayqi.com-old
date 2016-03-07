@@ -28,7 +28,7 @@ body {
 body, input, select, textarea {
 	color: $color-fg;
 	font-family: $font-family;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: $font-weight;
 	line-height: 1.75em;
 }
@@ -966,6 +966,7 @@ input[type="button"],
 				color: inherit;
 			}
 		}
+		.design { display: none}
 	}
 }
 
@@ -973,7 +974,7 @@ input[type="button"],
 
 #main {
 	margin-left: $size-header-width;
-	max-width: 50em + $size-header-pad;
+	max-width: 60em + $size-header-pad;
 	padding: $size-header-pad $size-header-pad $size-header-pad $size-header-pad;
 	width: calc(100% - #{$size-header-width});
 

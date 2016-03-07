@@ -31,6 +31,8 @@ ul.labeled-icons li {
   padding: 2.25em 1.5em; }
   #header h1 {
     font-size: 1.35em; }
+  #header li {
+    display: inline-block; }
 
 /* Footer */
 #footer {

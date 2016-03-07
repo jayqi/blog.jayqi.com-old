@@ -23,7 +23,7 @@ body {
 body, input, select, textarea {
   color: #373D3F;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 400;
   line-height: 1.75em; }
 
@@ -749,11 +749,13 @@ input[type="button"],
         padding-left: 0; }
       #footer .copyright li a {
         color: inherit; }
+    #footer .copyright .design {
+      display: none; }
 
 /* Main */
 #main {
   margin-left: 25%;
-  max-width: 54em;
+  max-width: 64em;
   padding: 4em 4em 4em 4em;
   width: calc(100% - 25%); }
   #main > section {

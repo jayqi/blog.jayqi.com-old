@@ -57,9 +57,12 @@ $size-header-pad:		1.5em;
 
 	#header {
 		padding: ($size-header-pad * 1.5) $size-header-pad;
-		
+
 		h1 {
 			font-size: 1.35em;
+		}
+		li {
+			display: inline-block;
 		}
 	}
 
@@ -68,10 +71,11 @@ $size-header-pad:		1.5em;
 	#footer {
 		padding: ($size-header-pad * 1.5) $size-header-pad;
 	}
-	
+
 /* Main */
 
 	#main {
+		// color: #FFA500; // Color for debugging
 		padding: ($size-header-pad * 1.5) $size-header-pad (($size-header-pad * 1.5) - $size-element-margin) $size-header-pad;
 
 		> section {
@@ -79,12 +83,12 @@ $size-header-pad:		1.5em;
 			padding: ($size-header-pad * 1.5) 0 0 0;
 		}
 	}
-	
+
 /* Poptrox */
 
 	.poptrox-popup {
 		border-radius: 0;
-		
+
 		.nav-next,
 		.nav-previous {
 			&:before {
