@@ -13,16 +13,16 @@
 	$font-weight-bold:			400;
 
 // Color.
-	$color-bg:					#fff;
-	$color-fg:					#373D3F;
-	$color-fg-bold:				#373D3F;
+	$color-bg:					#fff;				// Background color
+	$color-fg:					#373D3F;		// Text color
+	$color-fg-bold:				#373D3F;	// Header color
 	$color-fg-light:			#b2b2b2;
 	$color-border:				#efefef;
 	$color-border-bg:			#f7f7f7;
 	$color-border2:				#dfdfdf;
 	$color-border2-bg:			#e7e7e7;
 
-	$color-accent-bg:			#49bf9d;
+	$color-accent-bg:			#1287A8; 	// Link color
 	$color-accent-fg:			mix($color-accent-bg, #ffffff, 25%);
 	$color-accent-fg-bold:		#ffffff;
 	$color-accent-fg-light:		mix($color-accent-bg, #ffffff, 40%);
@@ -32,9 +32,9 @@
 	$color-accent-border2-bg:	rgba(255,255,255,0.2);
 
 	$color-accent2-bg:			#000000; // Sidebar background color
-	$color-accent2-fg:			rgba(255,255,255,0.5);
+	$color-accent2-fg:			rgba(255,255,255,0.66); // Sidebar text color
 	$color-accent2-fg-bold:		#ffffff;
-	$color-accent2-fg-light:	rgba(255,255,255,0.4);
+	$color-accent2-fg-light:	rgba(255,255,255,0.33);
 	$color-accent2-border:		rgba(255,255,255,0.25);
 	$color-accent2-border-bg:	rgba(255,255,255,0.075);
 	$color-accent2-border2:		rgba(255,255,255,0.5);
