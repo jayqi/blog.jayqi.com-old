@@ -1,14 +1,56 @@
 @import 'vars';
 @import 'mixins';
 
+$size-header-width:		25%;
+$size-header-pad:		3em;
+
 /*
 	Strata by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Header */
+
+	#header {
+		padding: ($size-header-pad * 1) $size-header-pad $size-header-pad $size-header-pad;
+		width: $size-header-width;
+
+		h1 {
+			font-size: 1.25em;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 0 $size-header-pad ($size-header-pad + $size-element-margin) $size-header-pad;
+		width: $size-header-width;
+
+		.copyright {
+			li {
+				border-left-width: 0;
+				display: block;
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 12pt;
+	}
+
+	/* Main */
+	#main {
+		// color: #7F00FF; // Color for debugging
+		max-width: 1120px;
+		margin-left: $size-header-width;
+		padding: ($size-header-pad * 1) $size-header-pad $size-header-pad $size-header-pad;
+		width: calc(100% - #{$size-header-width});
 	}

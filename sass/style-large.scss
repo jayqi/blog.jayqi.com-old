@@ -7,18 +7,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$size-header-width:		30%;
-$size-header-pad:		3em;
+$size-header-width:		320px;
+$size-header-pad:		2em;
 
 /* Header */
 
 	#header {
-		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+		padding: ($size-header-pad * 1) $size-header-pad $size-header-pad $size-header-pad;
 		width: $size-header-width;
 
 		h1 {
 			font-size: 1.25em;
-			
+
 			br {
 				display: none;
 			}
@@ -35,7 +35,6 @@ $size-header-pad:		3em;
 			li {
 				border-left-width: 0;
 				display: block;
-				line-height: 2.25em;
 				margin-left: 0;
 				padding-left: 0;
 			}
@@ -45,8 +44,9 @@ $size-header-pad:		3em;
 /* Main */
 
 	#main {
+		// color: #B0171F; // Color for debugging
 		margin-left: $size-header-width;
 		max-width: none;
-		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+		padding: ($size-header-pad * 1) $size-header-pad $size-header-pad $size-header-pad;
 		width: calc(100% - #{$size-header-width});
 	}

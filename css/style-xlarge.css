@@ -3,8 +3,31 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* Header */
+#header {
+  padding: 3em 3em 3em 3em;
+  width: 25%; }
+  #header h1 {
+    font-size: 1.25em; }
+    #header h1 br {
+      display: none; }
+
+/* Footer */
+#footer {
+  padding: 0 3em 5em 3em;
+  width: 25%; }
+  #footer .copyright li {
+    border-left-width: 0;
+    display: block;
+    margin-left: 0;
+    padding-left: 0; }
+
 /* Basic */
-body, input, select, textarea {
-  font-size: 12pt; }
+/* Main */
+#main {
+  max-width: 1120px;
+  margin-left: 25%;
+  padding: 3em 3em 3em 3em;
+  width: calc(100% - 25%); }
 
 /*# sourceMappingURL=style-xlarge.css.map */
