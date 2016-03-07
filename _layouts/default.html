@@ -111,7 +111,7 @@
       {% endif %}
     </ul>
     <ul class="copyright">
-      <li>&copy; {{ site.copyright }}</li>
+      <li>&copy; {{ site.time | date: "%Y" }} {{ site.copyright }}</li>
       <li><a href="#design" onclick="toggle_visibility('design');">Design</a></li>
       <div id="design" class="design" name="design"><li><a href="https://github.com/jayqi/Strata-Alt-Jekyll-Theme">Strata Alt Jekyll Theme</a>, derived from <a href="https://github.com/CloudCannon/Strata-Jekyll-Theme">CloudCannon</a> and <a href="http://html5up.net/strata">HTML5 Up</a></li></div>
       <li>Powered by <a href="https://jekyllrb.com/">Jekyll</a> on <a href="https://pages.github.com/">GitHub Pages</a></li>
