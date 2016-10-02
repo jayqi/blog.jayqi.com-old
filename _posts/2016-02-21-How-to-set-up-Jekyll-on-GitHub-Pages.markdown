@@ -1,8 +1,9 @@
 ---
 layout: post
 title: How to set up Jekyll on GitHub Pages
-date: 2016-02-21 02:00:00
-tags: web dev, jekyll, github
+date: 2016-02-21T02:00:00.000Z
+tags: 'web dev, jekyll, github'
+published: true
 ---
 
 In my [previous post]({{ site.baseurl }}/2016/02/21/Blog-Beginnings-Jekyll-and-GitHub-Pages.html), I discussed why I chose [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/) for my new blog. In this post, I will document how I set things up. 
@@ -65,9 +66,11 @@ That way whenever I need to get changes from the **upstream** GitHub repo, I can
 
     git checkout template
     git pull
+
 Similarly, I can also push local template changes to **upstream**
 
     git push upstream template:master
+
 The ``template:master`` is there because otherwise commits will be pushed to a **template** branch on the remote instead of **master**. 
     
 When I want to work on my blog, I can use ``git checkout master`` to make **master** the active branch and have my production files in my working directory.
@@ -75,6 +78,7 @@ When I want to work on my blog, I can use ``git checkout master`` to make **mast
 If I need to merge changes from **template** into **master**, I can checkout master and then use
 
     git merge template --no-ff
+
 to merge changes. Similarly, I can also merge template file changes from **master** into **template** the same way by doing the commands with the opposite branches. 
 
 The two branches aren't really necessary. I could always merge directly from **upstream** into **master**, and push template changes directly from **master** to **upstream**. However, keeping the two branches makes it easier for me to conceptually keep the production website separate from the template. 
@@ -87,15 +91,19 @@ First, make a **Gemfile** containing
 
     source 'https://rubygems.org'
     gem 'github-pages'
+
 Then, you can use
 
     bundle exec jekyll build --safe
+
 to build the website into **_sites/** and
 
     bundle exec jekyll serve
+
 to have it viewable locally at http://localhost:4000/. If you have draft posts in the **_drafts/** folder, you can run 
 
     bundle exec jekyll serve --drafts
+
 to include them.
 
 ## Publishing to GitHub
@@ -103,10 +111,11 @@ to include them.
 The remote **origin** should be pointing to the ***yourusername*****.github.io** repo on GitHub and be set as the upstream for **master** already. I ended up renaming it to **live** with
 
     git remote rename origin live
+
 because it felt more descriptive to me.
 
 Then, publishing is easily done by using committing changes and 
 
     git push live master
     
-And that's it. 
+And that's it.
