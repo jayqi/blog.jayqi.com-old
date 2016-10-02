@@ -29,8 +29,6 @@ ul.labeled-icons li {
 /* Header */
 #header {
   padding: 2.25em 1.5em; }
-  #header h1 {
-    font-size: 1.35em; }
   #header li {
     display: inline-block; }
 

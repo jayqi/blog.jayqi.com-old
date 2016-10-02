@@ -16,7 +16,7 @@
 	$color-bg:					#fff;				// Background color
 	$color-fg:					#373D3F;		// Text color
 	$color-fg-bold:				#373D3F;	// Header color
-	$color-fg-light:			#b2b2b2;
+	$color-fg-light:			#7f7f7f; 	// Subheader color
 	$color-border:				#efefef;
 	$color-border-bg:			#f7f7f7;
 	$color-border2:				#dfdfdf;
@@ -31,10 +31,10 @@
 	$color-accent-border2:		rgba(255,255,255,0.5);
 	$color-accent-border2-bg:	rgba(255,255,255,0.2);
 
-	$color-accent2-bg:			#000000; // Sidebar background color
-	$color-accent2-fg:			rgba(255,255,255,0.66); // Sidebar text color
+	$color-accent2-bg:			#000000; // Sidebar/header background color
+	$color-accent2-fg:			rgba(191,191,191,1); // Sidebar/header text color
 	$color-accent2-fg-bold:		#ffffff;
-	$color-accent2-fg-light:	rgba(255,255,255,0.33);
+	$color-accent2-fg-light:	rgba(191,191,191,1); // Footer text color
 	$color-accent2-border:		rgba(255,255,255,0.25);
 	$color-accent2-border-bg:	rgba(255,255,255,0.075);
 	$color-accent2-border2:		rgba(255,255,255,0.5);

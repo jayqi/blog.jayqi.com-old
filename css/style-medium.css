@@ -22,10 +22,8 @@ ul.icons li .icon {
   text-align: center;
   top: auto;
   width: 100%; }
-  #header h1 {
-    font-size: 1.75em; }
-    #header h1 br {
-      display: inline; }
+  #header h1 br {
+    display: inline; }
   #header ul {
     margin: 0;
     padding-left: 0; }
